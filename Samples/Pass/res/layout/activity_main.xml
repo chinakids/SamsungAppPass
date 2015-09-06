@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/buttonHasRegisteredFinger"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="已登记指纹" />
+
+                <Button
+                    android:id="@+id/buttonIdentify"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="鉴定" />
+
+                <Button
+                    android:id="@+id/buttonShowIdentifyDialogWithPW"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="指纹验证框(带密码)" />
+
+                <Button
+                    android:id="@+id/buttonShowIdentifyDialogWithoutPW"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="指纹验证框(不带密码)" />
+
+                <Button
+                    android:id="@+id/buttonCancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="取消验证" />
+
+                <Button
+                    android:id="@+id/buttonRegisterFinger"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="注册指纹" />
+
+                <Button
+                    android:id="@+id/buttonGetRegisteredFingerprintName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="获取指纹的名字" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="指纹的唯一ID"
+                    android:textSize="12dp"
+                    android:textColor="#0094ae"/>
+
+                <Button
+                    android:id="@+id/buttonGetRegisteredFingerprintID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="获取指纹的唯一ID" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="验证指定手指"
+                    android:textSize="12dp"
+                    android:textColor="#0094ae"/>
+
+                <Button
+                    android:id="@+id/buttonIdentifyWithIndex"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="验证 Index 1" />
+
+                <Button
+                    android:id="@+id/buttonShowIdentifyDialogWithIndex"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="验证 With Index 2,3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="定制验证框"
+                    android:textSize="12dp"
+                    android:textColor="#0094ae"/>
+
+                <Button
+                    android:id="@+id/buttonShowIdentifyDialogWithTitleNLogo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="定制logo" />
+
+                <Button
+                    android:id="@+id/buttonCustomizedDialogWithTransparency"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="定制遮罩透明度" />
+
+                <Button
+                    android:id="@+id/buttonCustomizedDialogWithSetDialogDismiss"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="定制错误文字" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>
