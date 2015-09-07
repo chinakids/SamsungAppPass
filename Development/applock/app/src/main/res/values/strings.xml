@@ -1,0 +1,24 @@
+<resources>
+    <!-- General -->
+    <string name="app_name">指纹解锁</string>
+
+    <!-- Toolbar titles -->
+    <string name="toolbar_title_home">加密</string>
+    <string name="other_activity">其他</string>
+
+    <!-- Navigation Drawer -->
+    <string name="nav_drawer_item_home">加密</string>
+    <string name="nav_drawer_help_and_feedback">提问 / 帮助</string>
+    <string name="nav_drawer_about">关于app</string>
+    <string name="navigation_drawer_opened">The navigation drawer is opened</string>
+    <string name="navigation_drawer_closed">The navigation drawer is closed</string>
+    <string name="tag_nav_drawer_main_entry">nav_drawer_main_entry</string>
+    <string name="tag_nav_drawer_special_entry">nav_drawer_special_entry</string>
+    <string name="tools_text_account_information_username">chinakids</string>
+    <string name="tools_text_account_information_email">gui@ligux.com</string>
+
+    <!-- Typeface names -->
+    <string name="typeface_roboto_regular">Roboto-Regular</string>
+    <string name="typeface_roboto_medium">Roboto-Medium</string>
+
+</resources>
