@@ -4,6 +4,11 @@ import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import chinakids.applock.R;
 import chinakids.applock.fragments.ColorFragment;
@@ -18,12 +23,21 @@ public class MainActivity extends ActionBarActivity {
 
     private Toolbar mToolbar;
     private NavigationDrawerFragment mNavigationDrawerFragment;
+    private ListView lv;
+    private static final String[] strs = new String[] {
+        "first", "second", "third", "fourth", "fifth"
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(chinakids.applock.R.layout.activity_main);
+
+
         initialise();
+
+
     }
 
     /**
@@ -46,6 +60,10 @@ public class MainActivity extends ActionBarActivity {
         // Create the first fragment to be shown
         Bundle bundle = new Bundle();
         bundle.putInt(ColorFragment.sARGUMENT_COLOR, chinakids.applock.R.color.blue_500);
+
+        lv = (ListView) findViewById(R.id.lv);//得到ListView对象的引用 /*为ListView设置Adapter来绑定数据*/
+        lv.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, strs));
+
 
         getSupportFragmentManager()
                 .beginTransaction()
